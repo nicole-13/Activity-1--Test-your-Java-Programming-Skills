@@ -1,0 +1,24 @@
+package com.mycompany.mavenproject2;
+
+import java.util.Scanner;
+public class CheckingWhetheraStringContainsOnlyDigits {
+    
+    public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	String str;
+	  int count=0,in;
+        System.out.println("Enter your String:");
+	  str=sc.next();
+            for(in=0;in<str.length();in++)
+	     {
+	    if(str.charAt(in) >= '0' && str.charAt(in) <= '9')  {
+		count++;
+		      }
+		   }
+		  if(count==str.length())
+		   System.out.print("String contains only digits.");
+		    else
+		   System.out.print("String does not contains only digits.");
+		
+	}
+}
