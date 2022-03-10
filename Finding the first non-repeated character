@@ -1,0 +1,22 @@
+package com.mycompany.mavenproject2;
+
+public class FindingTheFirstNonRepeatedCharacter {
+   
+    public static void main(String args[]) {
+      String input = "babasahin";
+       
+      for (int i = 0; i < input.length(); i++) {
+          boolean clean = true;
+          for (int j = 0; j < input.length(); j++) {
+              if (i != j && input.charAt(i) == input.charAt(j)) {
+                  clean = false;
+                  
+              }
+          }
+          if (clean) {
+              System.out.println(input.charAt(i));
+              break;
+          }
+      }
+   }
+}
