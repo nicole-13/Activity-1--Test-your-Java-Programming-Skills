@@ -1,0 +1,14 @@
+package com.mycompany.mavenproject2;
+
+public class RemovingWhiteSpaceFromAString {
+    
+    public static void main(String[] args){
+        
+        String str = "N  I   C   O   L   E " ;
+        
+        String str1 = str.replaceAll(" ", "");
+        
+        System.out.println(str1);
+        
+    }
+}
